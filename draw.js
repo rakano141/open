@@ -139,6 +139,8 @@ class Main{
 		this.ctx.textBaseline = "top";
 		this.ctx.fillText(this.date, 0, 0);
 		this.ctx.textBaseline = "middle";
+		this.ctx.textAlign = "center";
+		this.ctx.fillText("open2ch", this.canvas.width/2, this.canvas.height/2);
 		for(const elm of this.dataList){
 			let namel = (elm.name.length < 5) ? 5 : elm.name.length;
 			let size = elm.size * ((scale > 100)?1:scale/100);
