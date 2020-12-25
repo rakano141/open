@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="draw.js"></script>
+</head>
+<body>
+	<div style="position: absolute;margin: 10px;">
+		<div>
+			<input type="text" id="date" size="10" value="2020/">
+			<input type="text" id="canvas_x" size="5" value="">
+			<input type="text" id="canvas_y" size="5" value="">
+		</div>
+		<div><textarea id="textcode" cols="50" rows="5"></textarea></div>
+		<div>
+			<input type="button" id="load" value="読込">
+			<input type="button" id="download" value="保存">
+		</div>
+	</div>
+	<canvas id="canvas">
+	</canvas>
+<style>
+	html, body{
+		border: 0;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	canvas{
+		background-color: "#aaaaaa";
+		width: 100vw;
+        height: 100vh;
+	}
+</style>
+</body>
+</html>
