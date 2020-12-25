@@ -1,4 +1,4 @@
-const CANVAS_SCALE = 3;
+const CANVAS_SCALE = 5;
 const POWER_COEF = 0.01;
 document.addEventListener("DOMContentLoaded", (loade)=>{
 	const d = document;
@@ -95,7 +95,7 @@ class Main{
 			minSize: 10 * CANVAS_SCALE,
 			maxSize: Math.ceil((canvas.width>canvas.height)?canvas.height/6 : canvas.width/7) - 10 * CANVAS_SCALE,
 			fontScale: 1.5,
-			animation: true
+			animation: false
 		}
 	}
 	setProperty(){
